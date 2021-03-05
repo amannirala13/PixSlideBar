@@ -1,7 +1,25 @@
 plugins {
+    id 'com.github.panpf.bintray-publish'
     id 'com.android.library'
     id 'kotlin-android'
 }
+
+publish {
+
+    def groupProjectID = 'com.amannirala13.pixslidebar'
+    def artifactProjectID = 'PixSlideBar'
+    def publishVersionID = '0.1'
+
+    userOrg = 'amannirala13'
+    repoName = 'PixSlideBar'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'This library provides you a modern and smooth slider bar style button which u can use in your Android app. The user needs to slide the button to the end to perform a particular action in your your Android app.'
+    website = 'https://github.com/amannirala13/PixSlideBar.git'
+
+}
+
 
 android {
     compileSdkVersion 29
