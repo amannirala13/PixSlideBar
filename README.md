@@ -22,14 +22,14 @@ Add this lines in your gradle files
 - **build.gradel (App level)**
 
   `dependencies {
-	        implementation 'com.github.amannirala13:PixSlideBar:0.1'
+	        implementation 'com.github.amannirala13:PixSlideBar:{Latest_version}'
 	}`
   
 ## Jcenter
 
 Add the dependency to **build.gradle (App Level)** of your project
 
-`implementation 'com.amannirala13.pixslidebar:PixSlideBar:0.1'`
+`implementation 'com.amannirala13.pixslidebar:PixSlideBar:{Latest_version}'`
 
 ---
 ## Add to XML
