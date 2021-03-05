@@ -1,0 +1,3 @@
+include ':PixSlideBar'
+include ':app'
+rootProject.name = "PixSlideBar - Android"

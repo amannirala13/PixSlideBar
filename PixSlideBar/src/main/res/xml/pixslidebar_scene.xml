@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        android:id="@+id/pixSlider_trans"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000"
+        motion:motionInterpolator="linear">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe
+            motion:touchAnchorId="@+id/slider_slider"
+            motion:dragDirection="dragRight"
+            motion:maxVelocity="2"
+            motion:onTouchUp="autoCompleteToStart"
+            motion:touchRegionId="@id/slider_slider"
+            motion:maxAcceleration="1"
+            motion:touchAnchorSide="right" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/slider_slider"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp" />
+        <Constraint
+            android:id="@+id/progress_background"
+            motion:layout_constraintEnd_toEndOf="@+id/slider_slider"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/slider_slider"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp" />
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="@+id/slider_slider"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/progress_background" />
+        <Constraint
+            android:layout_height="match_parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/slider_text"
+            motion:layout_constraintStart_toStartOf="@+id/progress_background"
+            motion:layout_constraintStart_toEndOf="@+id/progress_background"
+            motion:layout_constraintEnd_toStartOf="@+id/slider_slider"
+            motion:layout_constraintHorizontal_bias="1.0" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/slider_text"
+            motion:layout_constraintStart_toStartOf="@+id/progress_background"
+            motion:layout_constraintStart_toEndOf="@+id/progress_background"
+            motion:layout_constraintEnd_toStartOf="@+id/slider_slider"
+            motion:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="24dp" />
+    </ConstraintSet>
+</MotionScene>
