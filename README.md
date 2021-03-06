@@ -13,7 +13,8 @@ Add this lines in your gradle files
 
 - **build.gradle (Project level)**
 
-  ``` allprojects {
+  ```gradle
+  allprojects {
       repositories {
         ...
         maven { url 'https://jitpack.io' }
@@ -21,7 +22,8 @@ Add this lines in your gradle files
     } ```
 - **build.gradel (App level)**
 
-  ``` dependencies {
+```gradle
+  dependencies {
 	        implementation 'com.github.amannirala13:PixSlideBar:{Latest_version}'
 	} 
 ```
@@ -30,14 +32,16 @@ Add this lines in your gradle files
 
 Add the dependency to **build.gradle (App Level)** of your project
 
-``` implementation 'com.amannirala13.pixslidebar:PixSlideBar:{Latest_version}' 
+```gradle
+implementation 'com.amannirala13.pixslidebar:PixSlideBar:{Latest_version}' 
 ```
 
 ---
 ## Add to XML
 Once imported, add the slidebar to your UI as follows:
 
-``` <com.amannirala13.pixslidebar.PixSlideBar
+```xml
+<com.amannirala13.pixslidebar.PixSlideBar
         android:id="@+id/my_slide_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
