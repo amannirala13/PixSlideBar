@@ -23,13 +23,15 @@ Add this lines in your gradle files
 
   ``` dependencies {
 	        implementation 'com.github.amannirala13:PixSlideBar:{Latest_version}'
-	} ```
+	} 
+```
   
 ## Jcenter
 
 Add the dependency to **build.gradle (App Level)** of your project
 
-``` implementation 'com.amannirala13.pixslidebar:PixSlideBar:{Latest_version}' ```
+``` implementation 'com.amannirala13.pixslidebar:PixSlideBar:{Latest_version}' 
+```
 
 ---
 ## Add to XML
@@ -40,4 +42,5 @@ Once imported, add the slidebar to your UI as follows:
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:message="@string/app_name"
-        /> ```
+        /> 
+```
