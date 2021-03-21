@@ -1,5 +1,5 @@
 # PixSlideBar  [![](ic_small.png)](https://github.com/amannirala13/PixSlideBar) 
-This library provides a modern and smooth slider bar style button that you can use in your Android app. The user needs to slide the button to the end to perform a particular action in your your Android app.
+This library provides a modern and smooth slider bar style button that you can use in your Android app. The user needs to slide the button to the end to perform a particular action in your Android app.
 
 **Latest Release:**  [![](https://jitpack.io/v/amannirala13/PixSlideBar.svg)](https://jitpack.io/#amannirala13/PixSlideBar)
 
