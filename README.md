@@ -46,3 +46,16 @@ Once imported, add the slidebar to your UI as follows:
         app:message="@string/app_name"
         /> 
 ```
+---
+## Add Swipe complete callback
+To perform an action on while complete use the following code in your kt class:
+```kotlin
+ slideBar.addOnSlideCompleteRunner(object:Runner{
+            override fun execute() {
+               Toast.makeText(this@MainActivity, "Slide Complete", Toast.LENGTH_SHORT).show()
+            }
+        })
+```
+---
+## Example
+To see implementation example and more features visit [**here**](https://github.com/amannirala13/PixSlideBar/tree/master/app/src/main).
